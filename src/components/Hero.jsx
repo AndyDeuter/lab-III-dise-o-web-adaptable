@@ -12,14 +12,16 @@ function Hero() {
     <section className="bg-white min-h-screen flex items-center py-12 md:py-20">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
+
           {/* Contenido de Texto - Alineado a la izquierda */}
           <div className="space-y-8 text-left">
             {/* Título principal */}
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-hero font-bold text-gray-900 leading-tight">
                 Transforma tu Negocio con{' '}
-                <span className="text-blue-600">Tecnología</span>
+                <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+                  Tecnología
+                </span>
               </h1>
               <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed">
                 La solución integral que revolucionará tu forma de trabajar
@@ -28,7 +30,7 @@ function Hero() {
 
             {/* Descripción */}
             <p className="text-lg text-gray-500 leading-relaxed max-w-2xl">
-              Más de 10,000 empresas confían en nuestra plataforma para impulsar 
+              Más de 10,000 empresas confían en nuestra plataforma para impulsar
               su crecimiento y optimizar sus procesos con tecnología de vanguardia.
             </p>
 
@@ -75,7 +77,7 @@ function Hero() {
 
           {/* Imagen/Mockup */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl shadow-lg p-4">
+            <div className="bg-gradient-to-r from-primary-600 to-secondary-600 text-white shadow-lg sticky top-0 z-50 backdrop-blur-md bg-opacity-95 transition-all duration-300">
               <div className="aspect-video rounded-xl overflow-hidden shadow-md bg-white">
                 <img
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80"
@@ -84,7 +86,7 @@ function Hero() {
                   loading="eager"
                 />
               </div>
-              
+
               {/* Elementos flotantes de métricas */}
               <div className="absolute -top-4 -left-4 bg-white rounded-xl shadow-lg p-4 border border-gray-100">
                 <div className="flex items-center gap-2">
@@ -92,7 +94,7 @@ function Hero() {
                   <span className="text-sm font-semibold text-gray-700">+45% ROI</span>
                 </div>
               </div>
-              
+
               <div className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg p-4 border border-gray-100">
                 <div className="text-center">
                   <div className="text-lg font-bold text-blue-600">10K+</div>

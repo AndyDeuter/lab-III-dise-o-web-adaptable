@@ -46,7 +46,7 @@ function Pricing() {
   return (
     <section className="py-20 bg-gray-900 text-white">
       <div className="container mx-auto px-4">
-        
+
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Planes para Cada Necesidad
@@ -55,20 +55,16 @@ function Pricing() {
             Elige el plan perfecto para tu equipo
           </p>
         </div>
-        
+
         {/* Cards de Pricing */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
-            <div 
+            <div
               key={index}
-              className={`
-                relative rounded-2xl p-8
-                ${plan.popular 
-                  ? 'bg-glinear-to-br from-blue-600 to-purple-600 transform scale-105 shadow-2xl' 
+              className={`relative rounded-2xl p-8 ${plan.popular
+                  ? 'bg-gradient-to-br from-primary-600 to-secondary-600 transform scale-105 shadow-2xl'
                   : 'bg-gray-800'
-                }
-                transition-all duration-300 hover:transform hover:scale-105
-              `}
+                }`}
             >
               {/* Badge Popular */}
               {plan.popular && (
@@ -78,12 +74,12 @@ function Pricing() {
                   </span>
                 </div>
               )}
-              
+
               {/* Nombre del Plan */}
               <h3 className="text-2xl font-bold mb-4">
                 {plan.name}
               </h3>
-              
+
               {/* Precio */}
               <div className="mb-6">
                 <span className="text-5xl font-extrabold">
@@ -93,7 +89,7 @@ function Pricing() {
                   {plan.period}
                 </span>
               </div>
-              
+
               {/* Características */}
               <ul className="space-y-4 mb-8">
                 {plan.features.map((feature, idx) => (
@@ -107,7 +103,7 @@ function Pricing() {
                   </li>
                 ))}
               </ul>
-              
+
               {/* Botón */}
               <button className={`
                 w-full py-4 rounded-lg font-bold text-lg transition-all
@@ -121,12 +117,12 @@ function Pricing() {
             </div>
           ))}
         </div>
-        
+
         {/* Nota de pie */}
         <p className="text-center text-gray-400 mt-12">
           Todos los planes incluyen 14 días de prueba gratis. Sin tarjeta de crédito requerida.
         </p>
-        
+
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+import { RiInstagramLine } from "react-icons/ri";
+import { FaXTwitter, FaFacebookF, FaHeart} from "react-icons/fa6";
 function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
@@ -15,13 +17,13 @@ function Footer() {
             </p>
             <div className="flex gap-4 mt-6">
               <a href="#" className="hover:text-blue-400 transition-colors text-2xl">
-                📘
+              <FaFacebookF />
               </a>
               <a href="#" className="hover:text-blue-400 transition-colors text-2xl">
-                🐦
+                <FaXTwitter />
               </a>
               <a href="#" className="hover:text-blue-400 transition-colors text-2xl">
-                📷
+                <RiInstagramLine />
               </a>
             </div>
           </div>
@@ -32,10 +34,10 @@ function Footer() {
               Producto
             </h4>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-white transition-colors">Características</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Precios</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Casos de Uso</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Integraciones</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Características</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Precios</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Casos de Uso</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Integraciones</a></li>
             </ul>
           </div>
           
@@ -45,10 +47,10 @@ function Footer() {
               Empresa
             </h4>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-white transition-colors">Sobre Nosotros</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Carreras</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contacto</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Sobre Nosotros</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Carreras</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contacto</a></li>
             </ul>
           </div>
           
@@ -58,10 +60,10 @@ function Footer() {
               Legal
             </h4>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-white transition-colors">Privacidad</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Términos</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Seguridad</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Cookies</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacidad</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Términos</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Seguridad</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Cookies</a></li>
             </ul>
           </div>
           
@@ -70,7 +72,7 @@ function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-800 pt-8 text-center text-sm">
           <p>
-            © 2025 TechPro. Todos los derechos reservados. | Hecho con ❤️ y Tailwind CSS
+            © 2025 TechPro. Todos los derechos reservados. | Hecho con <FaHeart className="inline text-red-500 mx-1" /> y Tailwind CSS
           </p>
         </div>
         

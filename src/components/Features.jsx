@@ -1,32 +1,37 @@
+import { MdOutlineElectricBolt } from "react-icons/md";
+import { TiLockClosed } from "react-icons/ti";
+import { RiCellphoneFill } from "react-icons/ri";
+import { IoStatsChart } from "react-icons/io5";
+import { AiFillSetting, AiFillFormatPainter } from "react-icons/ai";
 function Features() {
   const features = [
     {
-      icon: "⚡",
+      icon: <MdOutlineElectricBolt/>,
       title: "Velocidad Increíble",
       description: "Optimizado para cargar en milisegundos"
     },
     {
-      icon: "🔒",
+      icon: <TiLockClosed/>,
       title: "Seguridad Total",
       description: "Protección de datos de nivel empresarial"
     },
     {
-      icon: "📱",
+      icon: <RiCellphoneFill />,
       title: "100% Responsive",
       description: "Funciona perfectamente en todos los dispositivos"
     },
     {
-      icon: "🎨",
+      icon: <AiFillFormatPainter/>,
       title: "Diseño Moderno",
       description: "Interfaz intuitiva y atractiva"
     },
     {
-      icon: "⚙️",
+      icon: <AiFillSetting />,
       title: "Fácil Integración",
       description: "Compatible con tus herramientas favoritas"
     },
     {
-      icon: "📊",
+      icon: <IoStatsChart />,
       title: "Analytics Avanzado",
       description: "Métricas en tiempo real de tu negocio"
     }
@@ -69,7 +74,7 @@ function Features() {
               </p>
               
               {/* Indicador decorativo */}
-             <div className="mt-6 h-1 w-12  from-blue-500 to-purple-500 rounded-full group-hover:w-full transition-all duration-300"></div>
+             <div className="mt-6 h-1 w-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full group-hover:w-full transition-all duration-300"></div>
             </div>
           ))}
         </div>
