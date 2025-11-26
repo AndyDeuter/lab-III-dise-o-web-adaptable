@@ -33,7 +33,7 @@ function Footer() {
             <h4 className="text-white font-bold mb-4">
               Producto
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-sm">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Características</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Precios</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Casos de Uso</a></li>
@@ -46,7 +46,7 @@ function Footer() {
             <h4 className="text-white font-bold mb-4">
               Empresa
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-sm">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Sobre Nosotros</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Carreras</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
@@ -59,7 +59,7 @@ function Footer() {
             <h4 className="text-white font-bold mb-4">
               Legal
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-sm">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacidad</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Términos</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Seguridad</a></li>
@@ -70,8 +70,8 @@ function Footer() {
         </div>
         
         {/* Copyright */}
-        <div className="border-t border-gray-800 pt-8 text-center text-sm">
-          <p>
+        <div className="border-t border-gray-800 pt-8 flex items-center justify-center flex-wrap gap-1" >
+          <p className="text-xs text-center "> 
             © 2025 TechPro. Todos los derechos reservados. | Hecho con <FaHeart className="inline text-red-500 mx-1" /> y Tailwind CSS
           </p>
         </div>

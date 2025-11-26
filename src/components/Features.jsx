@@ -3,6 +3,7 @@ import { TiLockClosed } from "react-icons/ti";
 import { RiCellphoneFill } from "react-icons/ri";
 import { IoStatsChart } from "react-icons/io5";
 import { AiFillSetting, AiFillFormatPainter } from "react-icons/ai";
+
 function Features() {
   const features = [
     {
@@ -38,43 +39,43 @@ function Features() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-4 md:py-10 bg-gray-50">
+      <div className="container mx-auto px-4 max-w-7xl">
         
-        {/* Título de Sección */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        {/* Título de Sección - Más compacto */}
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
             Características Principales
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base text-gray-600 max-w-2xl mx-auto">
             Todo lo que necesitas para llevar tu negocio al siguiente nivel
           </p>
         </div>
         
-        {/* Grid de Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Grid de Cards - Más compacto */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 p-8 group hover:-translate-y-2"
+              className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 p-6 group hover:-translate-y-1"
             >
-              {/* Icono */}
-              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
+              {/* Icono - Más pequeño */}
+              <div className="text-4xl mb-3 text-primary-600 group-hover:scale-110 transition-transform">
                 {feature.icon}
               </div>
               
-              {/* Título */}
-              <h3 className="text-xl font-bold text-gray-800 mb-3">
+              {/* Título - Tipografía reducida */}
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
                 {feature.title}
               </h3>
               
-              {/* Descripción */}
-              <p className="text-gray-600 leading-relaxed">
+              {/* Descripción - Más compacta */}
+              <p className="text-sm text-gray-600 leading-relaxed">
                 {feature.description}
               </p>
               
-              {/* Indicador decorativo */}
-             <div className="mt-6 h-1 w-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full group-hover:w-full transition-all duration-300"></div>
+              {/* Indicador decorativo - Más sutil */}
+              <div className="mt-4 h-0.5 w-8 bg-linear-to-r from-primary-500 to-secondary-500 rounded-full group-hover:w-full transition-all duration-300"></div>
             </div>
           ))}
         </div>
