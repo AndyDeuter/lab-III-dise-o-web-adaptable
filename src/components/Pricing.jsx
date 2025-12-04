@@ -13,6 +13,17 @@ function Pricing() {
       popular: false
     },
     {
+      name: "Startup",
+      price: "$15",
+      period: "/mes",
+      features: [
+        "3 Usuarios",
+        "20 GB Almacenamiento",
+        "Soporte por Email",
+      ],
+      popular: false
+    },
+    {
       name: "Profesional",
       price: "$79",
       period: "/mes",
@@ -58,7 +69,7 @@ function Pricing() {
         </div>
 
         {/* Cards de Pricing */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {plans.map((plan, index) => (
             <div
               key={index}
