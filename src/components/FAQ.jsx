@@ -5,17 +5,17 @@ const faqs = [
   {
     question: '¿Cuál es la responsabilidad del estado activeIndex dentro del componente FAQ?',
     answer:
-      'El estado `activeIndex` guarda el índice de la pregunta actualmente abierta; permite abrir/cerrar ítems y controlar la animación del contenido.',
-  },
-  {
-    question: '¿Cómo funciona la apertura y cierre del acordeón?',
-    answer:
-      'Al hacer clic en una pregunta se actualiza `activeIndex`: si ya estaba abierta se cierra (null), si no se abre el nuevo índice y se cierra la anterior.',
+      'activeIndex guarda el índice de la pregunta actualmente abierta (o null si ninguna), y controla qué panel se muestra/oculta.',
   },
   {
     question: '¿Qué clases de Tailwind controlan la animación del panel?',
     answer:
       'Usamos `transition-all`, `overflow-hidden` y clases de `max-h-*` junto con `opacity-*` para animar la apertura y cierre de forma suave.',
+  },
+  {
+    question: '3.	¿Cómo sabe el componente qué pregunta está activa?',
+    answer:
+      'El componente compara activeIndex === idx al renderizar cada ítem; el toggle(idx) pone activeIndex en ese idx (o null para cerrar), por eso sabe cuál está activo.',
   },
 
 ]
